@@ -3,36 +3,35 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>WovenWishes — Wishes made visible</title>
+  <title>WovenWishes — Handmade Arts &amp; Crafts</title>
   <link rel="icon" type="image/png" href="images/Logo_circular.png" />
   <!-- SEO & Open Graph -->
-  <meta name="description" content="WovenWishes by Prerana — handmade arts and crafts from Hyderabad. Shop one-of-a-kind bookmarks, canvas paintings, mini canvases, coasters, rangoli, bottle decor and serving trays. Custom orders welcome. Ships across India." />
-  <meta name="keywords" content="handmade crafts Hyderabad, custom paintings India, handmade bookmarks, mini canvas paintings, handmade gifts India, WovenWishes, Prerana artist, custom orders Hyderabad" />
+  <meta name="description" content="Shop WovenWishes handmade products — bookmarks, canvas paintings, mini canvases, coasters, rangoli, bottle decor and serving trays. Each piece is one-of-a-kind. Ships across India." />
+  <meta name="keywords" content="handmade bookmarks India, canvas paintings Hyderabad, mini canvas art, handmade coasters, rangoli art, custom gifts India, WovenWishes shop" />
   <meta name="author" content="Prerana, WovenWishes" />
   <meta name="robots" content="index, follow" />
 
-  <!-- Open Graph (WhatsApp, Instagram, Facebook previews) -->
-  <meta property="og:title" content="WovenWishes — Wishes made visible" />
-  <meta property="og:description" content="Handmade arts and crafts by Prerana. One-of-a-kind pieces made with love — custom orders welcome, ships across India." />
+  <!-- Open Graph -->
+  <meta property="og:title" content="Shop — WovenWishes" />
+  <meta property="og:description" content="Browse handmade bookmarks, paintings, coasters, rangoli and more. Custom orders welcome. Ships across India." />
   <meta property="og:image" content="images/Logo_circular.png" />
-  <meta property="og:url" content="https://wovenwishes.netlify.app/" />
+  <meta property="og:url" content="https://wovenwishes.netlify.app/products.html" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="WovenWishes" />
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="WovenWishes — Wishes made visible" />
-  <meta name="twitter:description" content="Handmade arts and crafts by Prerana. Custom orders welcome, ships across India." />
+  <meta name="twitter:title" content="Shop — WovenWishes" />
+  <meta name="twitter:description" content="Browse handmade bookmarks, paintings, coasters, rangoli and more." />
   <meta name="twitter:image" content="images/Logo_circular.png" />
 
-  <link rel="canonical" href="https://wovenwishes.netlify.app/" />
+  <link rel="canonical" href="https://wovenwishes.netlify.app/products.html" />
   <link rel="icon" type="image/png" href="images/Logo_circular.png" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
   <a href="#main-content" class="skip-link">Skip to main content</a>
 
-  <!-- HEADER & NAVIGATION -->
   <header class="site-header">
     <div class="container">
       <a href="index.html" class="site-logo">
@@ -44,12 +43,12 @@
       </button>
       <nav id="main-nav" class="main-nav" aria-label="Main navigation">
         <ul>
-          <li><a href="index.html" class="nav-link active">About Me</a></li>
-          <li><a href="products.html" class="nav-link">Products</a></li>
+          <li><a href="about.html" class="nav-link">About Me</a></li>
+          <li><a href="index.html" class="nav-link active">Products</a></li>
           <li>
-            <button class="cart-nav-btn" id="cart-nav-btn" aria-label="Open cart" onclick="window.location='products.html'">
+            <button class="cart-nav-btn" id="cart-nav-btn" aria-label="Open cart">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
-              <span class="cart-count">0</span>
+              <span class="cart-count" id="cart-count">0</span>
             </button>
           </li>
         </ul>
@@ -58,172 +57,592 @@
   </header>
 
   <main id="main-content">
-
-    <!-- ── HERO ── -->
-    <section class="hero" aria-label="Introduction">
+    <section class="products-section">
       <div class="container">
-        <div class="hero-inner">
 
-          <div class="hero-text">
-            <p class="hero-eyebrow">Handcrafted with love</p>
-            <p class="hero-tagline">Wishes made visible</p>
-            <h1>Hello, I'm<br/>Prerana 👋</h1>
-            
-              <p>
-                  I'm a self-taught hobby artist who has loved drawing, painting, and creating things by hand ever since I was a child. 
-                  Over the years, I discovered that the most meaningful art isn't just something beautiful—it's something personal.
-              </p>
-              <p> 
-                  What started as handmade gifts for my family and friends slowly grew into creating personalized pieces for others. 
-                   I love understanding the memories, stories, and little details that mean the most to someone and turning them into something 
-                  they can hold onto forever.
-              </p>
-              <p>
-                   Every piece I make is one of a kind, created with love, care, and a personal touch. 
-                   My hope is that each creation brings joy and becomes a cherished part of someone's story.
-               </p>
-            <div class="hero-actions">
-              <a href="products.html" class="btn btn-primary">See my work</a>
-              <a href="#contact-form" class="btn btn-secondary">✉️ Say hello</a>
-              <a href="https://www.instagram.com/wovenwishes216" target="_blank" rel="noopener" class="btn btn-secondary">
-                <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
-                DM on Instagram
-              </a>
+        <div class="section-header">
+          <h1>My work</h1>
+          <p>Each piece is handmade and one-of-a-kind. Like something you see? Email me to place an order.</p>
+        </div>
+
+        <div class="category-tabs" role="tablist" aria-label="Product categories">
+          <button class="tab-btn active" role="tab" aria-selected="true"  data-category="all">All</button>
+          <button class="tab-btn" role="tab" aria-selected="false" data-category="bookmarks">Bookmarks</button>
+          <button class="tab-btn" role="tab" aria-selected="false" data-category="mini-canvas">Mini Canvas</button>
+          <button class="tab-btn" role="tab" aria-selected="false" data-category="canvas-paintings">Canvas Paintings</button>
+        <!-- ENable as and when completed
+          <button class="tab-btn" role="tab" aria-selected="false" data-category="coasters">Coasters</button>
+          <button class="tab-btn" role="tab" aria-selected="false" data-category="bottle-decors">Bottle Decors</button>
+          <button class="tab-btn" role="tab" aria-selected="false" data-category="rangoli">Rangoli</button>
+          <button class="tab-btn" role="tab" aria-selected="false" data-category="serving-trays">Serving Trays</button>
+        -->
+        </div>
+
+        <div class="products-grid" id="products-grid">
+
+          <!-- ═══════════════ BOOKMARKS ═══════════════ -->
+
+          <article class="product-card" data-category="bookmarks">
+            <a href="images/products/Bookmarks/bookmark1-1.png" target="_blank" class="main-img-link">
+              <img loading="lazy" decoding="async" class="main-img" src="images/products/Bookmarks/bookmark1-1.png" alt="Bookmark 1" />
+            </a>
+            <div class="thumb-strip">
+              <img loading="lazy" decoding="async" class="thumb-img active-thumb" src="images/products/Bookmarks/bookmark1-1.png" data-full="images/products/Bookmarks/bookmark1-1.png" alt="View 1" />
+              <img loading="lazy" decoding="async" class="thumb-img" src="images/products/Bookmarks/bookmark1-2.png" data-full="images/products/Bookmarks/bookmark1-2.png" alt="View 2" />
+              <img loading="lazy" decoding="async" class="thumb-img" src="images/products/Bookmarks/bookmark1-3.png" data-full="images/products/Bookmarks/bookmark1-3.png" alt="View 3" />
+              <a class="thumb-video" href="images/products/Bookmarks/bookmark1.mp4" target="_blank" title="Watch video">▶</a>
             </div>
-          </div>
+            <div class="product-info">
+              <span class="product-category-tag">Bookmarks</span>
+              <h2 class="product-name">Bookmark 1</h2>
+              <p class="product-description">A beautiful handmade bookmark, crafted with care. Perfect for book lovers and makes a lovely gift.</p>
+              <p class="product-price">₹ 150</p>
+              <button class="btn btn-cart" 
+                data-name="Bookmark 1"
+                onclick="addToCart(this)"
+                aria-label="Add Bookmark 1 to cart">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+                Add to cart
+              </button>
+            </div>
+          </article>
 
-          <div class="hero-image">
-            <!--
-              HOW TO ADD YOUR PHOTO:
-              1. Save your photo into the images/ folder
-                 (e.g. images/my-photo.jpg)
-              2. Replace the <div class="photo-placeholder"> below with:
-                 <img src="images/my-photo.jpg" alt="Prerana, artist" class="artist-photo" />
+          <article class="product-card" data-category="bookmarks">
+            <a href="images/products/Bookmarks/bookmark2-1.png" target="_blank" class="main-img-link">
+              <img loading="lazy" decoding="async" class="main-img" src="images/products/Bookmarks/bookmark2-1.png" alt="Bookmark 2" />
+            </a>
+            <div class="thumb-strip">
+              <img loading="lazy" decoding="async" class="thumb-img active-thumb" src="images/products/Bookmarks/bookmark2-1.png" data-full="images/products/Bookmarks/bookmark2-1.png" alt="View 1" />
+              <img loading="lazy" decoding="async" class="thumb-img" src="images/products/Bookmarks/bookmark2-2.png" data-full="images/products/Bookmarks/bookmark2-2.png" alt="View 2" />
+              <img loading="lazy" decoding="async" class="thumb-img" src="images/products/Bookmarks/bookmark2-3.png" data-full="images/products/Bookmarks/bookmark2-3.png" alt="View 3" />
+            </div>
+            <div class="product-info">
+              <span class="product-category-tag">Bookmarks</span>
+              <h2 class="product-name">Bookmark 2</h2>
+              <p class="product-description">A beautiful handmade bookmark, crafted with care. Perfect for book lovers and makes a lovely gift.</p>
+              <p class="product-price">₹ 150</p>
+              <button class="btn btn-cart" 
+                data-name="Bookmark 2"
+                onclick="addToCart(this)"
+                aria-label="Add Bookmark 2 to cart">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+                Add to cart
+              </button>
+            </div>
+          </article>
+
+          
+
+          <!-- ═══════════════ MINI CANVAS ═══════════════ -->
+
+          <article class="product-card" data-category="mini-canvas">
+            <a href="images/products/Mini Canvas/minicanvas1-1.png" target="_blank" class="main-img-link">
+              <img loading="lazy" decoding="async" class="main-img" src="images/products/Mini Canvas/minicanvas1-1.png" alt="Mini Canvas 1" />
+            </a>
+            <div class="thumb-strip">
+              <img loading="lazy" decoding="async" class="thumb-img active-thumb" src="images/products/Mini Canvas/minicanvas1-1.png" data-full="images/products/Mini Canvas/minicanvas1-1.png" alt="View 1" />
+              <img loading="lazy" decoding="async" class="thumb-img" src="images/products/Mini Canvas/minicanvasback.png" data-full="images/products/Mini Canvas/minicanvasback.png" alt="View 5" />
+            <!--  <img loading="lazy" decoding="async" class="thumb-img" src="images/products/Mini Canvas/minicanvas1-2.png" data-full="images/products/Mini Canvas/minicanvas1-2.png" alt="View 2" />
+              <img loading="lazy" decoding="async" class="thumb-img" src="images/products/Mini Canvas/minicanvas1-3.png" data-full="images/products/Mini Canvas/minicanvas1-3.png" alt="View 3" />
+              <a class="thumb-video" href="images/products/Mini Canvas/minicanvas1.mp4" target="_blank" title="Watch video">▶</a>
+              -->
+            </div>
+            <div class="product-info">
+              <span class="product-category-tag">Mini Canvas</span>
+              <h2 class="product-name">Mini Canvas 1</h2>
+              <p class="product-description">A small hand-painted canvas, perfect as a desk accent or a heartfelt gift.</p>
+              <p class="product-price">₹ 600</p>
+              <button class="btn btn-cart" 
+                data-name="Mini Canvas 1"
+                onclick="addToCart(this)"
+                aria-label="Add Mini Canvas 1 to cart">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+                Add to cart
+              </button>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="mini-canvas">
+            <a href="images/products/Mini Canvas/minicanvas2-1.png" target="_blank" class="main-img-link">
+              <img loading="lazy" decoding="async" class="main-img" src="images/products/Mini Canvas/minicanvas2-1.png" alt="Mini Canvas 2" />
+            </a>
+            <div class="thumb-strip">
+              <img loading="lazy" decoding="async" class="thumb-img active-thumb" src="images/products/Mini Canvas/minicanvas2-1.png" data-full="images/products/Mini Canvas/minicanvas2-1.png" alt="View 1" />
+              <img loading="lazy" decoding="async" class="thumb-img" src="images/products/Mini Canvas/minicanvasback.png" data-full="images/products/Mini Canvas/minicanvasback.png" alt="View 5" />
+            <!--  <img loading="lazy" decoding="async" class="thumb-img" src="images/products/Mini Canvas/minicanvas2-2.png" data-full="images/products/Mini Canvas/minicanvas2-2.png" alt="View 2" />
+              <img loading="lazy" decoding="async" class="thumb-img" src="images/products/Mini Canvas/minicanvas2-3.png" data-full="images/products/Mini Canvas/minicanvas2-3.png" alt="View 3" />
+              <a class="thumb-video" href="images/products/Mini Canvas/minicanvas2.mp4" target="_blank" title="Watch video">▶</a>
+              -->
+            </div>
+            <div class="product-info">
+              <span class="product-category-tag">Mini Canvas</span>
+              <h2 class="product-name">Mini Canvas 2</h2>
+              <p class="product-description">A small hand-painted canvas, perfect as a desk accent or a heartfelt gift.</p>
+              <p class="product-price">₹ 600</p>
+              <button class="btn btn-cart" 
+                data-name="Mini Canvas 2"
+                onclick="addToCart(this)"
+                aria-label="Add Mini Canvas 2 to cart">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+                Add to cart
+              </button>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="mini-canvas">
+            <a href="images/products/Mini Canvas/minicanvas3-1.png" target="_blank" class="main-img-link">
+              <img loading="lazy" decoding="async" class="main-img" src="images/products/Mini Canvas/minicanvas3-1.png" alt="Mini Canvas 3" />
+            </a>
+            <div class="thumb-strip">
+              <img loading="lazy" decoding="async" class="thumb-img active-thumb" src="images/products/Mini Canvas/minicanvas3-1.png" data-full="images/products/Mini Canvas/minicanvas3-1.png" alt="View 1" />
+            <img loading="lazy" decoding="async" class="thumb-img" src="images/products/Mini Canvas/minicanvasback.png" data-full="images/products/Mini Canvas/minicanvasback.png" alt="View 5" />
+              <!--  <img loading="lazy" decoding="async" class="thumb-img" src="images/products/Mini Canvas/minicanvas3-2.png" data-full="images/products/Mini Canvas/minicanvas3-2.png" alt="View 2" />
+              <img loading="lazy" decoding="async" class="thumb-img" src="images/products/Mini Canvas/minicanvas3-3.png" data-full="images/products/Mini Canvas/minicanvas3-3.png" alt="View 3" />
+              <a class="thumb-video" href="images/products/Mini Canvas/minicanvas3.mp4" target="_blank" title="Watch video">▶</a>
+              -->
+            </div>
+            <div class="product-info">
+              <span class="product-category-tag">Mini Canvas</span>
+              <h2 class="product-name">Mini Canvas 3</h2>
+              <p class="product-description">A small hand-painted canvas, perfect as a desk accent or a heartfelt gift.</p>
+              <p class="product-price">₹ 600</p>
+              <button class="btn btn-cart" 
+                data-name="Mini Canvas 3"
+                onclick="addToCart(this)"
+                aria-label="Add Mini Canvas 3 to cart">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+                Add to cart
+              </button>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="mini-canvas">
+            <a href="images/products/Mini Canvas/minicanvas4-1.png" target="_blank" class="main-img-link">
+              <img loading="lazy" decoding="async" class="main-img" src="images/products/Mini Canvas/minicanvas4-1.png" alt="Mini Canvas 4" />
+            </a>
+            <div class="thumb-strip">
+              <img loading="lazy" decoding="async" class="thumb-img active-thumb" src="images/products/Mini Canvas/minicanvas4-1.png" data-full="images/products/Mini Canvas/minicanvas4-1.png" alt="View 1" />
+              <img loading="lazy" decoding="async" class="thumb-img" src="images/products/Mini Canvas/minicanvasback.png" data-full="images/products/Mini Canvas/minicanvasback.png" alt="View 5" />
+              <!--  <img loading="lazy" decoding="async" class="thumb-img" src="images/products/Mini Canvas/minicanvas4-2.png" data-full="images/products/Mini Canvas/minicanvas4-2.png" alt="View 2" />
+              <img loading="lazy" decoding="async" class="thumb-img" src="images/products/Mini Canvas/minicanvas4-3.png" data-full="images/products/Mini Canvas/minicanvas4-3.png" alt="View 3" />
+              <a class="thumb-video" href="images/products/Mini Canvas/minicanvas4.mp4" target="_blank" title="Watch video">▶</a>
+              -->
+            </div>
+            <div class="product-info">
+              <span class="product-category-tag">Mini Canvas</span>
+              <h2 class="product-name">Mini Canvas 4</h2>
+              <p class="product-description">A small hand-painted canvas, perfect as a desk accent or a heartfelt gift.</p>
+              <p class="product-price">₹ 600</p>
+              <button class="btn btn-cart" 
+                data-name="Mini Canvas 4"
+                onclick="addToCart(this)"
+                aria-label="Add Mini Canvas 4 to cart">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+                Add to cart
+              </button>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="mini-canvas">
+            <a href="images/products/Mini Canvas/minicanvas5-1.png" target="_blank" class="main-img-link">
+              <img loading="lazy" decoding="async" class="main-img" src="images/products/Mini Canvas/minicanvas5-1.png" alt="Mini Canvas 5" />
+            </a>
+            <div class="thumb-strip">
+              <img loading="lazy" decoding="async" class="thumb-img active-thumb" src="images/products/Mini Canvas/minicanvas5-1.png" data-full="images/products/Mini Canvas/minicanvas5-1.png" alt="View 1" />
+              <img loading="lazy" decoding="async" class="thumb-img" src="images/products/Mini Canvas/minicanvasback.png" data-full="images/products/Mini Canvas/minicanvasback.png" alt="View 5" />
+              <!--  <img loading="lazy" decoding="async" class="thumb-img" src="images/products/Mini Canvas/minicanvas5-2.png" data-full="images/products/Mini Canvas/minicanvas5-2.png" alt="View 2" />
+              <img loading="lazy" decoding="async" class="thumb-img" src="images/products/Mini Canvas/minicanvas5-3.png" data-full="images/products/Mini Canvas/minicanvas5-3.png" alt="View 3" />
+              <a class="thumb-video" href="images/products/Mini Canvas/minicanvas5.mp4" target="_blank" title="Watch video">▶</a>
+              -->
+            </div>
+            <div class="product-info">
+              <span class="product-category-tag">Mini Canvas</span>
+              <h2 class="product-name">Mini Canvas 5</h2>
+              <p class="product-description">A small hand-painted canvas, perfect as a desk accent or a heartfelt gift.</p>
+              <p class="product-price">₹ 600</p>
+              <button class="btn btn-cart" 
+                data-name="Mini Canvas 5"
+                onclick="addToCart(this)"
+                aria-label="Add Mini Canvas 5 to cart">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+                Add to cart
+              </button>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="mini-canvas">
+            <a href="images/products/Mini Canvas/minicanvas6-1.png" target="_blank" class="main-img-link">
+              <img loading="lazy" decoding="async" class="main-img" src="images/products/Mini Canvas/minicanvas6-1.png" alt="Mini Canvas 6" />
+            </a>
+            <div class="thumb-strip">
+              <img loading="lazy" decoding="async" class="thumb-img active-thumb" src="images/products/Mini Canvas/minicanvas6-1.png" data-full="images/products/Mini Canvas/minicanvas6-1.png" alt="View 1" />
+              <img loading="lazy" decoding="async" class="thumb-img" src="images/products/Mini Canvas/minicanvasback.png" data-full="images/products/Mini Canvas/minicanvasback.png" alt="View 5" />
+              <!--  <img loading="lazy" decoding="async" class="thumb-img" src="images/products/Mini Canvas/minicanvas6-2.png" data-full="images/products/Mini Canvas/minicanvas6-2.png" alt="View 2" />
+              <img loading="lazy" decoding="async" class="thumb-img" src="images/products/Mini Canvas/minicanvas6-3.png" data-full="images/products/Mini Canvas/minicanvas6-3.png" alt="View 3" />
+              <a class="thumb-video" href="images/products/Mini Canvas/minicanvas6.mp4" target="_blank" title="Watch video">▶</a>
+              -->
+            </div>
+            <div class="product-info">
+              <span class="product-category-tag">Mini Canvas</span>
+              <h2 class="product-name">Mini Canvas 6</h2>
+              <p class="product-description">A small hand-painted canvas, perfect as a desk accent or a heartfelt gift.</p>
+              <p class="product-price">₹ 600</p>
+              <button class="btn btn-cart" 
+                data-name="Mini Canvas 6"
+                onclick="addToCart(this)"
+                aria-label="Add Mini Canvas 6 to cart">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+                Add to cart
+              </button>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="mini-canvas">
+            <a href="images/products/Mini Canvas/minicanvas7-1.png" target="_blank" class="main-img-link">
+              <img loading="lazy" decoding="async" class="main-img" src="images/products/Mini Canvas/minicanvas7-1.png" alt="Mini Canvas 7" />
+            </a>
+            <div class="thumb-strip">
+              <img loading="lazy" decoding="async" class="thumb-img active-thumb" src="images/products/Mini Canvas/minicanvas7-1.png" data-full="images/products/Mini Canvas/minicanvas7-1.png" alt="View 1" />
+              <img loading="lazy" decoding="async" class="thumb-img" src="images/products/Mini Canvas/minicanvasback.png" data-full="images/products/Mini Canvas/minicanvasback.png" alt="View 5" />
+              <!--  <img loading="lazy" decoding="async" class="thumb-img" src="images/products/Mini Canvas/minicanvas7-2.png" data-full="images/products/Mini Canvas/minicanvas7-2.png" alt="View 2" />
+              <img loading="lazy" decoding="async" class="thumb-img" src="images/products/Mini Canvas/minicanvas7-3.png" data-full="images/products/Mini Canvas/minicanvas7-3.png" alt="View 3" />
+              <a class="thumb-video" href="images/products/Mini Canvas/minicanvas7.mp4" target="_blank" title="Watch video">▶</a>
+              -->
+            </div>
+            <div class="product-info">
+              <span class="product-category-tag">Mini Canvas</span>
+              <h2 class="product-name">Mini Canvas 7</h2>
+              <p class="product-description">A small hand-painted canvas, perfect as a desk accent or a heartfelt gift.</p>
+              <p class="product-price">₹ 600</p>
+              <button class="btn btn-cart" 
+                data-name="Mini Canvas 7"
+                onclick="addToCart(this)"
+                aria-label="Add Mini Canvas 7 to cart">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+                Add to cart
+              </button>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="mini-canvas">
+            <a href="images/products/Mini Canvas/minicanvas8-1.png" target="_blank" class="main-img-link">
+              <img loading="lazy" decoding="async" class="main-img" src="images/products/Mini Canvas/minicanvas8-1.png" alt="Mini Canvas 8" />
+            </a>
+            <div class="thumb-strip">
+              <img loading="lazy" decoding="async" class="thumb-img active-thumb" src="images/products/Mini Canvas/minicanvas8-1.png" data-full="images/products/Mini Canvas/minicanvas8-1.png" alt="View 1" />
+              <img loading="lazy" decoding="async" class="thumb-img" src="images/products/Mini Canvas/minicanvasback.png" data-full="images/products/Mini Canvas/minicanvasback.png" alt="View 5" />
+              <!--  <img loading="lazy" decoding="async" class="thumb-img" src="images/products/Mini Canvas/minicanvas8-2.png" data-full="images/products/Mini Canvas/minicanvas8-2.png" alt="View 2" />
+              <img loading="lazy" decoding="async" class="thumb-img" src="images/products/Mini Canvas/minicanvas8-3.png" data-full="images/products/Mini Canvas/minicanvas8-3.png" alt="View 3" />
+              <a class="thumb-video" href="images/products/Mini Canvas/minicanvas8.mp4" target="_blank" title="Watch video">▶</a>
+              -->
+            </div>
+            <div class="product-info">
+              <span class="product-category-tag">Mini Canvas</span>
+              <h2 class="product-name">Mini Canvas 8</h2>
+              <p class="product-description">A small hand-painted canvas, perfect as a desk accent or a heartfelt gift.</p>
+              <p class="product-price">₹ 600</p>
+              <button class="btn btn-cart" 
+                data-name="Mini Canvas 8"
+                onclick="addToCart(this)"
+                aria-label="Add Mini Canvas 8 to cart">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+                Add to cart
+              </button>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="mini-canvas">
+            <a href="images/products/Mini Canvas/minicanvas9-1.png" target="_blank" class="main-img-link">
+              <img loading="lazy" decoding="async" class="main-img" src="images/products/Mini Canvas/minicanvas9-1.png" alt="Mini Canvas 9" />
+            </a>
+            <div class="thumb-strip">
+              <img loading="lazy" decoding="async" class="thumb-img active-thumb" src="images/products/Mini Canvas/minicanvas9-1.png" data-full="images/products/Mini Canvas/minicanvas9-1.png" alt="View 1" />
+              <img loading="lazy" decoding="async" class="thumb-img" src="images/products/Mini Canvas/minicanvasback.png" data-full="images/products/Mini Canvas/minicanvasback.png" alt="View 5" />
+              <!--  <img loading="lazy" decoding="async" class="thumb-img" src="images/products/Mini Canvas/minicanvas9-2.png" data-full="images/products/Mini Canvas/minicanvas9-2.png" alt="View 2" />
+              <img loading="lazy" decoding="async" class="thumb-img" src="images/products/Mini Canvas/minicanvas9-3.png" data-full="images/products/Mini Canvas/minicanvas9-3.png" alt="View 3" />
+              <a class="thumb-video" href="images/products/Mini Canvas/minicanvas9.mp4" target="_blank" title="Watch video">▶</a>
+              -->
+            </div>
+            <div class="product-info">
+              <span class="product-category-tag">Mini Canvas</span>
+              <h2 class="product-name">Mini Canvas 9</h2>
+              <p class="product-description">A small hand-painted canvas, perfect as a desk accent or a heartfelt gift.</p>
+              <p class="product-price">₹ 600</p>
+              <button class="btn btn-cart" 
+                data-name="Mini Canvas 9"
+                onclick="addToCart(this)"
+                aria-label="Add Mini Canvas 9 to cart">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+                Add to cart
+              </button>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="mini-canvas">
+            <a href="images/products/Mini Canvas/minicanvas10-1.png" target="_blank" class="main-img-link">
+              <img loading="lazy" decoding="async" class="main-img" src="images/products/Mini Canvas/minicanvas10-1.png" alt="Mini Canvas 10" />
+            </a>
+            <div class="thumb-strip">
+              <img loading="lazy" decoding="async" class="thumb-img active-thumb" src="images/products/Mini Canvas/minicanvas10-1.png" data-full="images/products/Mini Canvas/minicanvas10-1.png" alt="View 1" />
+              <img loading="lazy" decoding="async" class="thumb-img" src="images/products/Mini Canvas/minicanvasback.png" data-full="images/products/Mini Canvas/minicanvasback.png" alt="View 5" />
+              <!--  <img loading="lazy" decoding="async" class="thumb-img" src="images/products/Mini Canvas/minicanvas10-2.png" data-full="images/products/Mini Canvas/minicanvas10-2.png" alt="View 2" />
+              <img loading="lazy" decoding="async" class="thumb-img" src="images/products/Mini Canvas/minicanvas10-3.png" data-full="images/products/Mini Canvas/minicanvas10-3.png" alt="View 3" />
+              <a class="thumb-video" href="images/products/Mini Canvas/minicanvas10.mp4" target="_blank" title="Watch video">▶</a>
+              -->
+            </div>
+            <div class="product-info">
+              <span class="product-category-tag">Mini Canvas</span>
+              <h2 class="product-name">Mini Canvas 10</h2>
+              <p class="product-description">A small hand-painted canvas, perfect as a desk accent or a heartfelt gift.</p>
+              <p class="product-price">₹ 600</p>
+              <button class="btn btn-cart" 
+                data-name="Mini Canvas 10"
+                onclick="addToCart(this)"
+                aria-label="Add Mini Canvas 10 to cart">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+                Add to cart
+              </button>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="mini-canvas">
+            <a href="images/products/Mini Canvas/minicanvas11-1.png" target="_blank" class="main-img-link">
+              <img loading="lazy" decoding="async" class="main-img" src="images/products/Mini Canvas/minicanvas11-1.png" alt="Mini Canvas 11" />
+            </a>
+            <div class="thumb-strip">
+              <img loading="lazy" decoding="async" class="thumb-img active-thumb" src="images/products/Mini Canvas/minicanvas11-1.png" data-full="images/products/Mini Canvas/minicanvas11-1.png" alt="View 1" />
+            <img loading="lazy" decoding="async" class="thumb-img" src="images/products/Mini Canvas/minicanvasback.png" data-full="images/products/Mini Canvas/minicanvasback.png" alt="View 5" />
+              <!--  <img loading="lazy" decoding="async" class="thumb-img" src="images/products/Mini Canvas/minicanvas11-2.png" data-full="images/products/Mini Canvas/minicanvas11-2.png" alt="View 2" />
+              <img loading="lazy" decoding="async" class="thumb-img" src="images/products/Mini Canvas/minicanvas11-3.png" data-full="images/products/Mini Canvas/minicanvas11-3.png" alt="View 3" />
+              <a class="thumb-video" href="images/products/Mini Canvas/minicanvas11.mp4" target="_blank" title="Watch video">▶</a>
+              -->
+            </div>
+            <div class="product-info">
+              <span class="product-category-tag">Mini Canvas</span>
+              <h2 class="product-name">Mini Canvas 11</h2>
+              <p class="product-description">A small hand-painted canvas, perfect as a desk accent or a heartfelt gift.</p>
+              <p class="product-price">₹ 600</p>
+              <button class="btn btn-cart" 
+                data-name="Mini Canvas 11"
+                onclick="addToCart(this)"
+                aria-label="Add Mini Canvas 11 to cart">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+                Add to cart
+              </button>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="mini-canvas">
+            <a href="images/products/Mini Canvas/minicanvas12-1.png" target="_blank" class="main-img-link">
+              <img loading="lazy" decoding="async" class="main-img" src="images/products/Mini Canvas/minicanvas12-1.png" alt="Mini Canvas 12" />
+            </a>
+            <div class="thumb-strip">
+              <img loading="lazy" decoding="async" class="thumb-img active-thumb" src="images/products/Mini Canvas/minicanvas12-1.png" data-full="images/products/Mini Canvas/minicanvas12-1.png" alt="View 1" />
+            <img loading="lazy" decoding="async" class="thumb-img" src="images/products/Mini Canvas/minicanvasback.png" data-full="images/products/Mini Canvas/minicanvasback.png" alt="View 5" />
+              <!--  <img loading="lazy" decoding="async" class="thumb-img" src="images/products/Mini Canvas/minicanvas12-2.png" data-full="images/products/Mini Canvas/minicanvas12-2.png" alt="View 2" />
+              <img loading="lazy" decoding="async" class="thumb-img" src="images/products/Mini Canvas/minicanvas12-3.png" data-full="images/products/Mini Canvas/minicanvas12-3.png" alt="View 3" />
+              <a class="thumb-video" href="images/products/Mini Canvas/minicanvas12.mp4" target="_blank" title="Watch video">▶</a>
+              -->
+            </div>
+            <div class="product-info">
+              <span class="product-category-tag">Mini Canvas</span>
+              <h2 class="product-name">Mini Canvas 12</h2>
+              <p class="product-description">A small hand-painted canvas, perfect as a desk accent or a heartfelt gift.</p>
+              <p class="product-price">₹ 600</p>
+              <button class="btn btn-cart" 
+                data-name="Mini Canvas 12"
+                onclick="addToCart(this)"
+                aria-label="Add Mini Canvas 12 to cart">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+                Add to cart
+              </button>
+            </div>
+          </article>
+
+          <!-- ═══════════════ CANVAS PAINTINGS ═══════════════ -->
+
+          <article class="product-card" data-category="canvas-paintings">
+            <a href="images/products/Canvas Paintings/canvaspaintings1-1.png" target="_blank" class="main-img-link">
+              <img loading="lazy" decoding="async" class="main-img" src="images/products/Canvas Paintings/canvaspaintings1-1.png" alt="Canvas Painting 1" />
+            </a>
+            <div class="thumb-strip">
+              <img loading="lazy" decoding="async" class="thumb-img active-thumb" src="images/products/Canvas Paintings/canvaspaintings1-1.png" data-full="images/products/Canvas Paintings/canvaspaintings1-1.png" alt="View 1" />
+          <!--
+              <img loading="lazy" decoding="async" class="thumb-img" src="images/products/Canvas Paintings/canvaspaintings1-2.png" data-full="images/products/Canvas Paintings/canvaspaintings1-2.png" alt="View 2" />
+              <img loading="lazy" decoding="async" class="thumb-img" src="images/products/Canvas Paintings/canvaspaintings1-3.png" data-full="images/products/Canvas Paintings/canvaspaintings1-3.png" alt="View 3" />
+              <a class="thumb-video" href="images/products/Canvas Paintings/canvaspaintings1.mp4" target="_blank" title="Watch video">▶</a>
+          -->
+            </div>
+            <div class="product-info">
+              <span class="product-category-tag">Canvas Paintings</span>
+              <h2 class="product-name">Canvas Painting 1</h2>
+              <p class="product-description">Hand-painted on canvas — each piece tells its own quiet story.</p>
+              <p class="product-price">₹ 000</p>
+              <button class="btn btn-cart" 
+                data-name="Canvas Painting 1"
+                onclick="addToCart(this)"
+                aria-label="Add Canvas Painting 1 to cart">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+                Add to cart
+              </button>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="canvas-paintings">
+            <a href="images/products/Canvas Paintings/canvaspaintings2-1.png" target="_blank" class="main-img-link">
+              <img loading="lazy" decoding="async" class="main-img" src="images/products/Canvas Paintings/canvaspaintings2-1.png" alt="Canvas Painting 2" />
+            </a>
+            <div class="thumb-strip">
+              <img loading="lazy" decoding="async" class="thumb-img active-thumb" src="images/products/Canvas Paintings/canvaspaintings2-1.png" data-full="images/products/Canvas Paintings/canvaspaintings2-1.png" alt="View 1" />
+             <!--
+              <img loading="lazy" decoding="async" class="thumb-img" src="images/products/Canvas Paintings/canvaspaintings2-2.png" data-full="images/products/Canvas Paintings/canvaspaintings2-2.png" alt="View 2" />
+              <img loading="lazy" decoding="async" class="thumb-img" src="images/products/Canvas Paintings/canvaspaintings2-3.png" data-full="images/products/Canvas Paintings/canvaspaintings2-3.png" alt="View 3" />
+              <a class="thumb-video" href="images/products/Canvas Paintings/canvaspaintings2.mp4" target="_blank" title="Watch video">▶</a>
             -->
-            <!--
-            <div class="photo-placeholder" aria-label="Photo of the artist">
-              <div class="photo-placeholder-inner">
-                <span class="photo-icon">🎨</span>
-                <span>Your photo here</span>
-                <span class="photo-hint">See comment in code to add it</span>
-              </div>
             </div>
-            -->
-            <img src="images/IMG_aboutme.png" alt="Prerana, artist" class="artist-photo" loading="lazy" decoding="async" />
-          </div>
-        
-        </div>
+            <div class="product-info">
+              <span class="product-category-tag">Canvas Paintings</span>
+              <h2 class="product-name">Canvas Painting 2</h2>
+              <p class="product-description">Hand-painted on canvas — each piece tells its own quiet story.</p>
+              <p class="product-price">₹ 000</p>
+              <button class="btn btn-cart" 
+                data-name="Canvas Painting 2"
+                onclick="addToCart(this)"
+                aria-label="Add Canvas Painting 2 to cart">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+                Add to cart
+              </button>
+            </div>
+          </article>
+ 
+         
+          <!-- ═══════════════ COASTERS ═══════════════ -->
+           <!-- ENable as and when completed
+          <article class="product-card" data-category="coasters">
+            <a href="images/products/Coasters/coasters1-1.png" target="_blank" class="main-img-link">
+              <img loading="lazy" decoding="async" class="main-img" src="images/products/Coasters/coasters1-1.png" alt="Coaster Set 1" />
+            </a>
+            <div class="thumb-strip">
+              <img loading="lazy" decoding="async" class="thumb-img active-thumb" src="images/products/Coasters/coasters1-1.png" data-full="images/products/Coasters/coasters1-1.png" alt="View 1" />
+              <img loading="lazy" decoding="async" class="thumb-img" src="images/products/Coasters/coasters1-2.png" data-full="images/products/Coasters/coasters1-2.png" alt="View 2" />
+              <img loading="lazy" decoding="async" class="thumb-img" src="images/products/Coasters/coasters1-3.png" data-full="images/products/Coasters/coasters1-3.png" alt="View 3" />
+              <a class="thumb-video" href="images/products/Coasters/coasters1.mp4" target="_blank" title="Watch video">▶</a>
+            </div>
+            <div class="product-info">
+              <span class="product-category-tag">Coasters</span>
+              <h2 class="product-name">Coaster Set 1</h2>
+              <p class="product-description">Hand-painted coasters — functional and beautiful. A perfect addition to any home.</p>
+              <p class="product-price">₹ 300</p>
+              <button class="btn btn-cart" 
+                data-name="Coaster Set 1"
+                onclick="addToCart(this)"
+                aria-label="Add Coaster Set 1 to cart">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+                Add to cart
+              </button>
+            </div>
+          </article>
+          -->
+
+
+
+          <!-- ═══════════════ BOTTLE DECORS ═══════════════ -->
+           <!-- ENable as and when completed
+          <article class="product-card" data-category="bottle-decors">
+            <a href="images/products/Bottle Decors/bottledecors1-1.png" target="_blank" class="main-img-link">
+              <img loading="lazy" decoding="async" class="main-img" src="images/products/Bottle Decors/bottledecors1-1.png" alt="Bottle Decor 1" />
+            </a>
+            <div class="thumb-strip">
+              <img loading="lazy" decoding="async" class="thumb-img active-thumb" src="images/products/Bottle Decors/bottledecors1-1.png" data-full="images/products/Bottle Decors/bottledecors1-1.png" alt="View 1" />
+              <img loading="lazy" decoding="async" class="thumb-img" src="images/products/Bottle Decors/bottledecors1-2.png" data-full="images/products/Bottle Decors/bottledecors1-2.png" alt="View 2" />
+              <img loading="lazy" decoding="async" class="thumb-img" src="images/products/Bottle Decors/bottledecors1-3.png" data-full="images/products/Bottle Decors/bottledecors1-3.png" alt="View 3" />
+              <a class="thumb-video" href="images/products/Bottle Decors/bottledecors1.mp4" target="_blank" title="Watch video">▶</a>
+            </div>
+            <div class="product-info">
+              <span class="product-category-tag">Bottle Decors</span>
+              <h2 class="product-name">Bottle Decor 1</h2>
+              <p class="product-description">A plain bottle transformed into something beautiful — works as a vase or decorative piece.</p>
+              <p class="product-price">₹ 000</p>
+              <button class="btn btn-cart" 
+                data-name="Bottle Decor 1"
+                onclick="addToCart(this)"
+                aria-label="Add Bottle Decor 1 to cart">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+                Add to cart
+              </button>
+            </div>
+          </article>
+          -->
+
+
+
+          <!-- ═══════════════ RANGOLI ═══════════════ -->
+           <!-- ENable as and when completed
+          <article class="product-card" data-category="rangoli">
+            <a href="images/products/Rangoli/rangoli1-1.png" target="_blank" class="main-img-link">
+              <img loading="lazy" decoding="async" class="main-img" src="images/products/Rangoli/rangoli1-1.png" alt="Rangoli 1" />
+            </a>
+            <div class="thumb-strip">
+              <img loading="lazy" decoding="async" class="thumb-img active-thumb" src="images/products/Rangoli/rangoli1-1.png" data-full="images/products/Rangoli/rangoli1-1.png" alt="View 1" />
+              <img loading="lazy" decoding="async" class="thumb-img" src="images/products/Rangoli/rangoli1-2.png" data-full="images/products/Rangoli/rangoli1-2.png" alt="View 2" />
+              <img loading="lazy" decoding="async" class="thumb-img" src="images/products/Rangoli/rangoli1-3.png" data-full="images/products/Rangoli/rangoli1-3.png" alt="View 3" />
+              <a class="thumb-video" href="images/products/Rangoli/rangoli1.mp4" target="_blank" title="Watch video">▶</a>
+            </div>
+            <div class="product-info">
+              <span class="product-category-tag">Rangoli</span>
+              <h2 class="product-name">Rangoli 1</h2>
+              <p class="product-description">A handcrafted rangoli design — ideal for festivals and celebrations.</p>
+              <p class="product-price">₹ 000</p>
+              <button class="btn btn-cart" 
+                data-name="Rangoli 1"
+                onclick="addToCart(this)"
+                aria-label="Add Rangoli 1 to cart">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+                Add to cart
+              </button>
+            </div>
+          </article>
+          -->
+
+
+
+          <!-- ═══════════════ SERVING TRAYS ═══════════════ -->
+           <!-- ENable as and when completed
+          <article class="product-card" data-category="serving-trays">
+            <a href="images/products/Serving Trays/servingtrays1-1.png" target="_blank" class="main-img-link">
+              <img loading="lazy" decoding="async" class="main-img" src="images/products/Serving Trays/servingtrays1-1.png" alt="Serving Tray 1" />
+            </a>
+            <div class="thumb-strip">
+              <img loading="lazy" decoding="async" class="thumb-img active-thumb" src="images/products/Serving Trays/servingtrays1-1.png" data-full="images/products/Serving Trays/servingtrays1-1.png" alt="View 1" />
+              <img loading="lazy" decoding="async" class="thumb-img" src="images/products/Serving Trays/servingtrays1-2.png" data-full="images/products/Serving Trays/servingtrays1-2.png" alt="View 2" />
+              <img loading="lazy" decoding="async" class="thumb-img" src="images/products/Serving Trays/servingtrays1-3.png" data-full="images/products/Serving Trays/servingtrays1-3.png" alt="View 3" />
+              <a class="thumb-video" href="images/products/Serving Trays/servingtrays1.mp4" target="_blank" title="Watch video">▶</a>
+            </div>
+            <div class="product-info">
+              <span class="product-category-tag">Serving Trays</span>
+              <h2 class="product-name">Serving Tray 1</h2>
+              <p class="product-description">A hand-decorated serving tray — beautiful and functional, perfect for the home.</p>
+              <p class="product-price">₹ 000</p>
+              <button class="btn btn-cart" 
+                data-name="Serving Tray 1"
+                onclick="addToCart(this)"
+                aria-label="Add Serving Tray 1 to cart">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+                Add to cart
+              </button>
+            </div>
+          </article>
+        -->
+
+
+        </div><!-- end .products-grid -->
+
+        <p class="no-products" id="no-products" hidden>No products in this category yet — check back soon!</p>
+
       </div>
     </section>
-
-    <!-- ── MY STORY ── -->
-    <section class="story-section" aria-label="My story">
-      <div class="container">
-        <div class="story-inner">
-
-          <div class="story-text">
-            <p class="section-eyebrow">My story</p>
-            <h2>How it all started</h2>
-            <p>
-              It started with a sketchbook and some coloured pencils my mum gave me
-              years ago. I'd always doodled, but one day I sat down and actually
-              <em>finished</em> something — and the feeling was indescribable.
-              Over the years, art became much more than a hobby. During difficult times, 
-              painting helped me hold on, slow down, and find joy again. 
-              I've also always been a dreamer and a traveller at heart. 
-              I would paint places I longed to visit—seashores, gardens, campfires, 
-              and cozy little corners of the world. Somehow, many of those paintings later became real memories, 
-              which made me believe a little in the magic of manifestation.
-              Since then, I haven't stopped.
-            </p>
-            <p>
-              Today I work across paintings, textile art, and paper craft.
-              I love that each medium tells a different kind of story. Paintings are
-              where I dream. Paper craft is where I play.
-            </p>
-            <p>
-              I'm based in Hyderabad and I ship all over India. If you'd like
-              something custom — a particular colour, a specific size, a gift for
-              someone special — just drop me an email. I love custom work.
-            </p>
-          </div>
-
-          <!-- What I make — craft type tags -->
-          <div class="story-crafts">
-            <p class="crafts-label">What I make</p>
-            <div class="craft-tags">
-              <span class="craft-tag">🖌️ Paintings</span>
-              <span class="craft-tag">✂️ Paper craft</span>
-              <span class="craft-tag">🎀 Textile art</span>
-              <span class="craft-tag">🎁 Custom orders</span>
-              <span class="craft-tag">📦 Ships across India</span>
-            </div>
-
-            <!-- Contact form card -->
-            <div class="contact-card">
-              <p class="contact-card-title">Want something made just for you?</p>
-              <p class="contact-card-text">
-                Custom pieces, gifting, bulk orders — fill in the form and I'll get back to you within a day.
-              </p>
-              <form id="contact-form" class="contact-form" novalidate>
-                <input type="text"  id="contact-name"    name="name"    placeholder="Your name *"       class="cart-input" required />
-                <input type="email" id="contact-email"   name="email"   placeholder="Your email *"      class="cart-input" required />
-                <input type="tel"   id="contact-phone"   name="phone"   placeholder="Phone (optional)"  class="cart-input" />
-                <textarea           id="contact-message" name="message" placeholder="Tell me what you have in mind..." class="cart-input cart-textarea" rows="3"></textarea>
-                <div class="contact-form-actions">
-                  <button type="submit" class="btn btn-primary contact-submit-btn">✉️ Send message</button>
-                  <a href="https://www.instagram.com/wovenwishes216" target="_blank" rel="noopener" class="btn btn-instagram-gradient">
-                    <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
-                    DM on Instagram
-                  </a>
-                </div>
-                <p class="cart-note" id="contact-status"></p>
-              </form>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- ── WHY HANDMADE ── -->
-    <section class="features-section" aria-label="Why handmade">
-      <div class="container">
-        <p class="section-eyebrow">Why handmade?</p>
-        <h2>Every piece has a story</h2>
-        <div class="features-grid">
-
-          <div class="feature-card">
-            <div class="feature-icon" aria-hidden="true">🤲</div>
-            <h3>Made by hand, always</h3>
-            <p>No machines, no assembly lines. Every single item is made by me, start to finish, in my little studio at home.</p>
-          </div>
-
-          <div class="feature-card">
-            <div class="feature-icon" aria-hidden="true">🌱</div>
-            <h3>One of a kind</h3>
-            <p>Because everything is handmade, no two pieces are exactly alike. What you receive is truly yours and no one else's.</p>
-          </div>
-
-          <div class="feature-card">
-            <div class="feature-icon" aria-hidden="true">💌</div>
-            <h3>Custom orders welcome</h3>
-            <p>Have something specific in mind? A colour, a size, a theme? Drop me an email — I love making things to order.</p>
-          </div>
-
-          <div class="feature-card">
-            <div class="feature-icon" aria-hidden="true">📦</div>
-            <h3>Packed with care</h3>
-            <p>Every order is packed carefully so it reaches you in perfect condition. I ship anywhere in India.</p>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
   </main>
 
-  <!-- FOOTER -->
   <footer class="site-footer" role="contentinfo" aria-label="Site footer">
     <div class="container">
       <div class="footer-logo">
@@ -254,63 +673,41 @@
     </div>
   </footer>
 
+
+  <!-- ── CART SIDEBAR ── -->
+  <div class="cart-overlay" id="cart-overlay"></div>
+  <aside class="cart-sidebar" id="cart-sidebar" aria-label="Shopping cart" hidden>
+    <div class="cart-header">
+      <h2>Your cart</h2>
+      <button class="cart-close" id="cart-close" aria-label="Close cart">✕</button>
+    </div>
+
+    <div class="cart-items" id="cart-items">
+      <p class="cart-empty" id="cart-empty">Your cart is empty.<br/>Add something magical ✨</p>
+    </div>
+
+    <div class="cart-footer" id="cart-footer" hidden>
+      <div class="cart-total">
+        <span>Total</span>
+        <span class="cart-total-amount" id="cart-total">₹ 0</span>
+      </div>
+      <form id="cart-order-form" class="cart-form" novalidate>
+        <input type="text"  id="order-name"    name="name"     placeholder="Your name *"              class="cart-input" required />
+        <input type="email" id="order-email"   name="email"    placeholder="Your email *"             class="cart-input" required />
+        <input type="tel"   id="order-phone"   name="phone"    placeholder="Phone (optional)"         class="cart-input" />
+        <textarea id="order-address" name="address" placeholder="Shipping address *" class="cart-input cart-textarea" rows="3" required></textarea>
+        <input type="date"  id="order-date"    name="required_by" class="cart-input" title="Expected required date" />
+        <label for="order-date" class="cart-input-label">Expected date needed by (optional)</label>
+        <textarea id="order-note" name="note"  placeholder="Any special requests?" class="cart-input cart-textarea" rows="2"></textarea>
+        <button type="submit" class="btn btn-primary cart-submit-btn">Place order</button>
+        <p class="cart-note">I'll confirm your order within 24 hours.</p>
+      </form>
+    </div>
+  </aside>
+
   <script src="js/nav.js"></script>
-  <script>
-    // Contact form — Formspree
-    var contactForm = document.getElementById('contact-form');
-    if (contactForm) {
-      contactForm.addEventListener('submit', function(e) {
-        e.preventDefault();
-        var name    = document.getElementById('contact-name').value.trim();
-        var email   = document.getElementById('contact-email').value.trim();
-        var phone   = document.getElementById('contact-phone').value.trim();
-        var message = document.getElementById('contact-message').value.trim();
-        var status  = document.getElementById('contact-status');
+  <script src="js/products.js"></script>
+  <script src="js/cart.js"></script>
 
-        if (!name || !email) {
-          status.textContent = 'Please enter your name and email.';
-          status.style.color = '#fd1d1d';
-          return;
-        }
-
-        var submitBtn = contactForm.querySelector('.contact-submit-btn');
-        submitBtn.textContent = 'Sending...';
-        submitBtn.disabled = true;
-
-        fetch('https://formspree.io/f/mjgdlonr', {
-          method: 'POST',
-          headers: { 'Accept': 'application/json', 'Content-Type': 'application/json' },
-          body: JSON.stringify({
-            name: name, email: email,
-            phone: phone || 'Not provided',
-            message: message || 'No message'
-          })
-        })
-        .then(function(res) {
-          if (res.ok) {
-            contactForm.reset();
-            contactForm.innerHTML =
-              '<div class="cart-confirmation">' +
-              '<div class="cart-confirm-icon">✨</div>' +
-              '<h3>Message sent!</h3>' +
-              '<p>Thank you ' + name + '! Prerana will get back to you within 24 hours.</p>' +
-              '<div class="cart-confirm-status">⏳ Awaiting reply</div>' +
-              '</div>';
-          } else {
-            status.textContent = 'Something went wrong. Please try again.';
-            status.style.color = '#fd1d1d';
-            submitBtn.textContent = '✉️ Send message';
-            submitBtn.disabled = false;
-          }
-        })
-        .catch(function() {
-          status.textContent = 'Network error. Please try again.';
-          status.style.color = '#fd1d1d';
-          submitBtn.textContent = '✉️ Send message';
-          submitBtn.disabled = false;
-        });
-      });
-    }
-  </script>
 </body>
 </html>
